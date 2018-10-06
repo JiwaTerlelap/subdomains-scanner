@@ -7,7 +7,7 @@
  * Usage :  Usage : php subdomain site.com
  */
 error_reporting(0);
-class Dork{
+class Scan{
 	function ngecek($url){
 			$ch = curl_init();
 			$options = [
@@ -29,7 +29,7 @@ class Dork{
 			  }
 	}
 }
-$dork = new Dork();
+$dork = new Scan();
 $get = $argv[1];
  if($get){
      $dork->ngecek($get);
