@@ -21,8 +21,8 @@ class Scan{
 			$aksi = curl_exec($ch);
 			// print_r($aksi);
 			preg_match_all("/<div class=\"domains js-domain-name\">([^`]*?)<\/div>/",$aksi, $data);
-			  foreach ($data[1] as $key) {
-			  	    echo "[+] Di Temukan -> {$key}\r\n";
+			  foreach (str_replace(" ", "", $data[1]) as $key) {
+			  	    echo "[+] Di Temukan -> {$key}\n";
 			  	    $file = fopen("subdomain.txt", "a");
 			  	            fwrite($file, $key. "\r\n");
 			  	            fclose($file);
