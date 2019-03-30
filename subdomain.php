@@ -3,7 +3,7 @@
  * Subdomain Scanner
  * Coded : galehdotid
  * thx   : Indoxploit - xaisyndicate - all indonesia Hacker Rulez
- * Open Result subdomain.txt !
+ * Open Result : randomsubdomain.txt !
  * Usage :  Usage : php subdomain site.com
  */
 error_reporting(0);
