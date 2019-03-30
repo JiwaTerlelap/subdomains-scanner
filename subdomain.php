@@ -6,6 +6,7 @@
  * Open Result subdomain.txt !
  * Usage :  Usage : php subdomain site.com
  */
+error_reporting(0);
 class Scan{
 	public function ngecek($url){
 			$ch = curl_init();
